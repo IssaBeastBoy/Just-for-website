@@ -10,7 +10,7 @@
 
 body{
     color: white;
-    padding: 5%;
+    /* padding: 5%; */
     background-image: url("img/pug.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -36,4 +36,14 @@ footer{
 
 table {
     width: 50%;
+    border: 10px;
+    border-style: solid;
+}
+
+td {
+    width: 10%;
+}
+
+tr {
+    width: 10%;
 }
