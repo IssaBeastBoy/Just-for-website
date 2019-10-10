@@ -1,98 +1,95 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel= "stylesheet" type="text/css" href= "Style sheet.css">
-        <script type="text/javascript" src="Jave Script.js"></script>   
-    </head> 
+    <link rel= "stylesheet" type="text/css" href= "css/bootstrap.min.css">
+    <link rel= "stylesheet" type="text/css" href= "Style sheet.css">
+    <script type="text/javascript" src="Jave Script.js"></script>   
+    <meta name= "viewport" content = "width = device-width">
+</head> 
 <body>
 
     <div id="Logged_Out" class="container">    
         <header id="Header">Girl friend Classifier</header>
-        <table style="width: 50%">
-            <tr>
-                <th>Boyfriend Name</th>
-                <th>Age</th>
-                <th>Girl friend</th>
-                <th>Status</th>
-                <th> Relationship Status</th>
-            </tr>
-            <tr>
-                <td><form><input type="text"></form></td>
-                <td><form><input type="text"></form></td>
-                <td><form><input type="text"></form></ta>
-                <td><select name = "behavior">
-                    <option value= "crazy">Crazy</option>
-                    <option value= "Normal"> Normal</option>
-                    <option value = "Loving">Loving</option>
-                    </select>
-                </td>
-                <td>
-                    <select name= "status">
-                        <option name= "ex"> Ex </option>
-                        <option name= "dating"> Dating</option>
-                    </select>
-                </td>
-            </tr>
-        </table>
-        
-        <p id= "Important">To add table into data base please fill in the paramters</p>
-        
-        <form method="get" action= "ServerNotWorking.php">
-            <p> UserName: <input type ="text" > </p>
-            <p>PassWords: <input type ="text"></p>
-            <p><button id="loginbtn" type="button"> Login</button> <button id= "SignUpbtn" type="button"> Signup </button></p>
+        <table >
+        <tr class="col-md-4 col-lg-6">
+            <th>Boyfriend Name</th>
+            <th>Age</th>
+            <th>Girl friend</th>
+            <th>Status</th>
+            <th> Relationship Status</th>
+        </tr>
+        <tr>
+            <td><form><input type="text"></form></td>
+            <td><form><input type="text"></form></td>
+            <td><form><input type="text"></form></ta>
+            <td><select name = "behavior">
+                <option value= "crazy">Crazy</option>
+                <option value= "Normal"> Normal</option>
+                <option value = "Loving">Loving</option>
+                </select>
+            </td>
+            <td>
+                <select name= "status">
+                    <option name= "ex"> Ex </option>
+                    <option name= "dating"> Dating</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <p id= "Important">To add table into data base please fill in the paramters</p>
+    <form method="get" action= "ServerNotWorking.php">
+        <p> UserName: <input type ="text" > </p>
+        <p>PassWords: <input type ="text"></p>
+        <p><button id="loginbtn" type="button"> Login</button> <button id= "SignUpbtn" type="button"> Signup </button></p>
         </form>
         
     </div>
 
     <div id="Logged_In">
         <p>Welcome back </p>
+        <button id="Back_ToLogOut" type= "button"> Home </button>
     </div> 
 
-    <div id="Sign_Up" class="container">
+    <div id="Sign_Up" class="container1">
         <header id="Signing_In">All parameters must be filled in</header>
 
-        <label>
-            User Name: <input type = "text"> 
-        </label>
+        <form>
+            <div class="form-group">
+                <label for="username"> Username </label>
+                <input type="text" class="form-control" id="username">
+            </div>
+            <div class="form-group">
+                <label for="name"> Name </label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="Lastname"> Last Name </label>
+                <input type="text" class="form-control" id="Lastname">
+            </div>
+            <div class="form-group">
+                <label for="age"> Age </label>
+                <input type="text" class="form-control" id="age">
+            </div>
+            <div class="form-group">
+                <label for="email"> email Address </label>
+                <input type="email" class="form-control" id="email">
+            </div>
 
-        <br>
+            <div class="form-group">
+                <label for="pwd"> Password </label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+            
+            <div class="form-group">
+                <label for="pwd"> Password </label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+            
+        </form>
 
-        <label>
-            Name: <input type = "text"> 
-        </label>
+        <button id="Back_LogOut" type="button" class="btn btn-primary"> Home </button> 
+        <button id="Summit_LI" type="button" class="btn btn-outline"> Submit </button>
         
-        <br>
-
-        <label>
-            Last Name: <input type = "text"> 
-        </label>
-
-        <br>
-
-        <label>
-            Age : <input type = "text"> 
-        </label>
-
-        <br>
-
-        <label>
-            Email address: <input type = "text"> 
-        </label>
-
-        <br>
-
-        <label>
-            Password: <input type = "text"> 
-        </label>
-
-        <br>
-
-        <label>
-            Confirm password: <input type = "text"> 
-        </label>
-
-        <button id="Back_LogOut" type= "button"> Home </button> <button id="Summit_LI" type="button">Submit</button>
     </div>
 
     <footer>
