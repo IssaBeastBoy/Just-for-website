@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel= "stylesheet" type="text/css" href= "Style sheet.css">
-    <script type="text/javascript" src="Jave Script.js"></script>   
-</head> 
+        <link rel= "stylesheet" type="text/css" href= "Style sheet.css">
+        <script type="text/javascript" src="Jave Script.js"></script>   
+    </head> 
 <body>
+
     <div id="Logged_Out" class="container">    
         <header id="Header">Girl friend Classifier</header>
         <table style="width: 50%">
-        <tr>
-            <th>Boyfriend Name</th>
-            <th>Age</th>
-            <th>Girl friend</th>
-            <th>Status</th>
-            <th> Relationship Status</th>
-        </tr>
-        <tr>
-            <td><form><input type="text"></form></td>
-            <td><form><input type="text"></form></td>
-            <td><form><input type="text"></form></ta>
-            <td><select name = "behavior">
-                <option value= "crazy">Crazy</option>
-                <option value= "Normal"> Normal</option>
-                <option value = "Loving">Loving</option>
-                </select>
-            </td>
-            <td>
-                <select name= "status">
-                    <option name= "ex"> Ex </option>
-                    <option name= "dating"> Dating</option>
-                </select>
-            </td>
-        </tr>
-    </table>
-    <p id= "Important">To add table into data base please fill in the paramters</p>
-    <form method="get" action= "ServerNotWorking.php">
-        <p> UserName: <input type ="text" > </p>
-        <p>PassWords: <input type ="text"></p>
-        <p><button id="loginbtn" type="button"> Login</button> <button id= "SignUpbtn" type="button"> Signup </button></p>
+            <tr>
+                <th>Boyfriend Name</th>
+                <th>Age</th>
+                <th>Girl friend</th>
+                <th>Status</th>
+                <th> Relationship Status</th>
+            </tr>
+            <tr>
+                <td><form><input type="text"></form></td>
+                <td><form><input type="text"></form></td>
+                <td><form><input type="text"></form></ta>
+                <td><select name = "behavior">
+                    <option value= "crazy">Crazy</option>
+                    <option value= "Normal"> Normal</option>
+                    <option value = "Loving">Loving</option>
+                    </select>
+                </td>
+                <td>
+                    <select name= "status">
+                        <option name= "ex"> Ex </option>
+                        <option name= "dating"> Dating</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        
+        <p id= "Important">To add table into data base please fill in the paramters</p>
+        
+        <form method="get" action= "ServerNotWorking.php">
+            <p> UserName: <input type ="text" > </p>
+            <p>PassWords: <input type ="text"></p>
+            <p><button id="loginbtn" type="button"> Login</button> <button id= "SignUpbtn" type="button"> Signup </button></p>
         </form>
-    
+        
     </div>
 
     <div id="Logged_In">
@@ -48,29 +51,50 @@
 
     <div id="Sign_Up" class="container">
         <header id="Signing_In">All parameters must be filled in</header>
-        <br>
+
+        <label>
             User Name: <input type = "text"> 
-        </br>
+        </label>
+
         <br>
+
+        <label>
             Name: <input type = "text"> 
-        </br>
+        </label>
+        
         <br>
+
+        <label>
             Last Name: <input type = "text"> 
-        </br>
+        </label>
+
         <br>
+
+        <label>
             Age : <input type = "text"> 
-        </br>
+        </label>
+
         <br>
+
+        <label>
             Email address: <input type = "text"> 
-        </br>
+        </label>
+
         <br>
+
+        <label>
             Password: <input type = "text"> 
-        </br>
+        </label>
+
         <br>
+
+        <label>
             Confirm password: <input type = "text"> 
-        </br>
+        </label>
+
         <button id="Back_LogOut" type= "button"> Home </button> <button id="Summit_LI" type="button">Submit</button>
     </div>
+
     <footer>
             <i> A guide to save you heart from pain... get in contact with others </i>
             <p>
