@@ -17,4 +17,4 @@ window.onload = function () {
         document.getElementById('Logged_Out').style.display = 'block';
         document.getElementById('Sign_Up').style.display = 'none';        
     };
-};
+}; 
