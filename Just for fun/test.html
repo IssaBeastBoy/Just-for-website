@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <div id="Logged_Out" class="container1">
+    <div id="Logged_Out" >
+    <div class="container1">
         <header id="Header">Girl friend Classifier</header>
         <form>
             <div class="form-group">
@@ -42,43 +43,77 @@
         </form>
         <p id="Important">To add table into data base please fill in the paramters</p>
         <form method="get" action="ServerNotWorking.php">
-            <p> UserName: <input type="text"> </p>
-            <p>PassWords: <input type="text"></p>
-            <p><button id="loginbtn" type="button" class="btn btn-primary"> Login</button> <button id="SignUpbtn" type="button"> Signup
-                </button></p>
+            <div class="form-group">
+                <label>UserName</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>PassWords</label>
+                <input type="password" class="form-control">
+            </div>
+            <button id="loginbtn" type="button" class="btn btn-primary"> Login</button> 
+            <button id="SignUpbtn" type="button"  class="btn btn-primary"> Signup</button>
+        </form>
+        
+    </div>
+    </div>
+    <div id="Logged_In">
+        <div class="container">
+            <p>Welcome back </p>
+            <p>How are you feeling today? </p>
+            <p><input type="radio" name="feelings"> Happy</p>
+            <p><input type="radio" name="feelings"> Okay</p>
+            <p><input type="radio" name="feelings"> Not Sure</p>
+            <p><input type="radio" name="feelings"> Sad</p>
+            <p><input type="radio" name="feelings"> Heart Broken</p>
+            <p><input type="radio" name="feelings"> Depressed</p>
+            <p id="Date"></p>
+            <p>
+                <textarea class="form-control" rows="10%"></textarea>
+            </p>
+            <button id="Back_ToLogOut" type= "button" class="btn btn-primary"> Home </button>
+        </div>
+    </div> 
+    <div id="Sign_Up" class="container1">
+        <form>
+            <div class="form-group">
+                <label for="username"> Username </label>
+                <input type="text" class="form-control" id="username">
+            </div>
+            <div class="form-group">
+                <label for="name"> Name </label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="Lastname"> Last Name </label>
+                <input type="text" class="form-control" id="Lastname">
+            </div>
+            <div class="form-group">
+                <label for="age"> Age </label>
+                <input type="text" class="form-control" id="age">
+            </div>
+            <div class="form-group">
+                <label for="email"> email Address </label>
+                <input type="email" class="form-control" id="email">
+            </div>
+
+            <div class="form-group">
+                <label for="pwd"> Password </label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+            
+            <div class="form-group">
+                <label for="pwd"> Password </label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+            
         </form>
 
+        <button id="Back_LogOut" type="button" class="btn btn-primary"> Home </button> 
+        <button id="Summit_LI" type="button" class="btn btn-outline"> Submit </button>
+        
     </div>
 
-    <div id="Logged_In">
-        <p>Welcome back </p>
-    </div>
-
-    <div id="Sign_Up" class="container1">
-        <header id="Signing_In">All parameters must be filled in</header>
-        <br>
-        User Name: <input type="text">
-        </br>
-        <br>
-        Name: <input type="text">
-        </br>
-        <br>
-        Last Name: <input type="text">
-        </br>
-        <br>
-        Age : <input type="text">
-        </br>
-        <br>
-        Email address: <input type="text">
-        </br>
-        <br>
-        Password: <input type="text">
-        </br>
-        <br>
-        Confirm password: <input type="text">
-        </br>
-        <button id="Back_LogOut" type="button"> Home </button> <button id="Summit_LI" type="button">Submit</button>
-    </div>
     <footer>
         <i> A guide to save you heart from pain... get in contact with others </i>
         <p>
