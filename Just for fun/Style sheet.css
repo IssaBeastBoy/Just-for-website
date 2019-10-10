@@ -1,7 +1,27 @@
 #Important{
     color: red;
 }
+
 #Header{
     font-size: 50px;
     font-style: bold;
+    text-align: center;
+}
+
+body{
+    color: white;
+    padding: 5%;
+    background-image: url("img/pug.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    color: black;
+    background-color: wheat;
+    opacity: 0.8;
+    padding: 10%;
+    border-radius: 15%;
+    text-align: center;
 }

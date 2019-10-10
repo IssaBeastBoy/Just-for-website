@@ -6,31 +6,35 @@
 </head> 
 <body>    
     <header id="Header">Girl friend Classifier</header>
-    <table style="width: 50%">
-    <tr>
-        <th>Boyfriend Name</th>
-        <th>Age</th>
-        <th>Girl friend</th>
-        <th>Status</th>
-        <th> Relationship Status</th>
-    </tr>
-    <tr>
-        <td><form><input type="text"></form></td>
-        <td><form><input type="text"></form></td>
-        <td><form><input type="text"></form></ta>
-        <td><select name = "behavior">
-            <option value= "crazy">Crazy</option>
-            <option value= "Normal"> Normal</option>
-            <option value = "Loving">Loving</option>
-            </select>
-        </td>
-        <td>
-            <select name= "status">
-                <option name= "ex"> Ex </option>
-                <option name= "dating"> Dating</option>
-            </select>
-        </td>
-    </tr>
+    
+    <div class="container">
+        <table style="width: 50%">
+            <tr>
+                <th>Boyfriend Name</th>
+                <th>Age</th>
+                <th>Girl friend</th>
+                <th>Status</th>
+                <th> Relationship Status</th>
+            </tr>
+            <tr>
+                <td><form><input type="text"></form></td>
+                <td><form><input type="text"></form></td>
+                <td><form><input type="text"></form></ta>
+                <td><select name = "behavior">
+                    <option value= "crazy">Crazy</option>
+                    <option value= "Normal"> Normal</option>
+                    <option value = "Loving">Loving</option>
+                    </select>
+                </td>
+                <td>
+                    <select name= "status">
+                        <option name= "ex"> Ex </option>
+                        <option name= "dating"> Dating</option>
+                    </select>
+                </td>
+            </tr>
+    </div>
+
 </table>
 <p id= "Important">To add table into data base please fill in the paramters</p>
 <form method="get" action= "ServerNotWorking.php">
