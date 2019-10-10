@@ -10,14 +10,14 @@
 
 body{
     color: white;
-    padding: 5%;
+    /* padding: 5%; */
     background-image: url("img/pug.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.container{
+.container1{
     color: black;
     background-color: wheat;
     opacity: 0.8;
@@ -35,4 +35,14 @@ footer{
 
 table {
     width: 50%;
+    border: 10px;
+    border-style: solid;
+}
+
+td {
+    width: 10%;
+}
+
+tr {
+    width: 10%;
 }

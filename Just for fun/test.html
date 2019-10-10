@@ -1,84 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <link rel= "stylesheet" type="text/css" href= "css/bootstrap.min.css">
-    <link rel= "stylesheet" type="text/css" href= "Style sheet.css">
-    <script type="text/javascript" src="Jave Script.js"></script>   
-    <meta name= "viewport" content = "width = device-width">
-</head> 
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Style sheet.css">
+    <script type="text/javascript" src="Jave Script.js"></script>
+    <meta name="viewport" content="width = device-width">
+</head>
+
 <body>
-    <div id="Logged_Out" class="container">    
+    <div id="Logged_Out" class="container1">
         <header id="Header">Girl friend Classifier</header>
-        <table >
-        <tr class="col-md-4 col-lg-6">
-            <th>Boyfriend Name</th>
-            <th>Age</th>
-            <th>Girl friend</th>
-            <th>Status</th>
-            <th> Relationship Status</th>
-        </tr>
-        <tr>
-            <td><form><input type="text"></form></td>
-            <td><form><input type="text"></form></td>
-            <td><form><input type="text"></form></ta>
-            <td><select name = "behavior">
-                <option value= "crazy">Crazy</option>
-                <option value= "Normal"> Normal</option>
-                <option value = "Loving">Loving</option>
+        <form>
+            <div class="form-group">
+                <label>Boyfriend Name</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Age</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Girl friend</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Behavior</label>
+                <select name="behavior" class="custom-select">
+                    <option value="crazy">Crazy</option>
+                    <option value="Normal"> Normal</option>
+                    <option value="Loving">Loving</option>
                 </select>
-            </td>
-            <td>
-                <select name= "status">
-                    <option name= "ex"> Ex </option>
-                    <option name= "dating"> Dating</option>
-                </select>
-            </td>
-        </tr>
-    </table>
-    <p id= "Important">To add table into data base please fill in the paramters</p>
-    <form method="get" action= "ServerNotWorking.php">
-        <p> UserName: <input type ="text" > </p>
-        <p>PassWords: <input type ="text"></p>
-        <p><button id="loginbtn" type="button"> Login</button> <button id= "SignUpbtn" type="button"> Signup </button></p>
+            </div>
+            <div>
+                <label>Relationship Status</label>
+                    <select name="status" class="custom-select">
+                        <option name="ex"> Ex </option>
+                        <option name="dating"> Dating</option>
+                    </select>
+            </div>
         </form>
-    
+        <p id="Important">To add table into data base please fill in the paramters</p>
+        <form method="get" action="ServerNotWorking.php">
+            <p> UserName: <input type="text"> </p>
+            <p>PassWords: <input type="text"></p>
+            <p><button id="loginbtn" type="button" class="btn btn-primary"> Login</button> <button id="SignUpbtn" type="button"> Signup
+                </button></p>
+        </form>
+
     </div>
 
     <div id="Logged_In">
         <p>Welcome back </p>
-    </div> 
+    </div>
 
-    <div id="Sign_Up" class="container">
+    <div id="Sign_Up" class="container1">
         <header id="Signing_In">All parameters must be filled in</header>
         <br>
-            User Name: <input type = "text"> 
+        User Name: <input type="text">
         </br>
         <br>
-            Name: <input type = "text"> 
+        Name: <input type="text">
         </br>
         <br>
-            Last Name: <input type = "text"> 
+        Last Name: <input type="text">
         </br>
         <br>
-            Age : <input type = "text"> 
+        Age : <input type="text">
         </br>
         <br>
-            Email address: <input type = "text"> 
+        Email address: <input type="text">
         </br>
         <br>
-            Password: <input type = "text"> 
+        Password: <input type="text">
         </br>
         <br>
-            Confirm password: <input type = "text"> 
+        Confirm password: <input type="text">
         </br>
-        <button id="Back_LogOut" type= "button"> Home </button> <button id="Summit_LI" type="button">Submit</button>
+        <button id="Back_LogOut" type="button"> Home </button> <button id="Summit_LI" type="button">Submit</button>
     </div>
     <footer>
-            <i> A guide to save you heart from pain... get in contact with others </i>
-            <p>
-                The best Relationship advice you can ever have!
-            </p>
-            Save Your Soul &copy;
-        </footer>
-    </body>
+        <i> A guide to save you heart from pain... get in contact with others </i>
+        <p>
+            The best Relationship advice you can ever have!
+        </p>
+        Save Your Soul &copy;
+    </footer>
+</body>
+
 </html>
